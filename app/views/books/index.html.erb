@@ -18,9 +18,9 @@
     <tr>
       <td><span><%= list.title %></span></td>
       <td><span><%= list.body %></span></td>
-      <td class="btn1"><%= link_to "Show",show_path(list.id), class: "btn" %></td>
-      <td class="btn2"><%= link_to "Edit",edit_list_path(list.id), class: "btn" %></td>
-      <td class="btn3"><%= link_to "destroy",destroy_list_path(list.id),method: :delete,"data-confirm" => "Are you sure?", class: "btn" %></td>
+      <td class="btn1"><%= link_to "Show",book_path(list.id), class: "btn" %></td>
+      <td class="btn2"><%= link_to "Edit",edit_book_path(list.id), class: "btn" %></td>
+      <td class="btn3"><%= link_to "Destroy",destroy_list_path(list.id),method: :delete,"data-confirm" => "Are you sure?", class: "btn" %></td>
     </tr>
        <% end %>
   </tbody>

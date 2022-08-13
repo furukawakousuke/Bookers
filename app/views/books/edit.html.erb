@@ -37,6 +37,10 @@
     <%= f.submit 'Update Book' %>
   </div>
   <% end %>
+  
+  <%= link_to "Show",book_path(@list.id),class:"btn" %>
+|
+<a class=btn  href="/books">Back</a>
 </form>
   
 </body>
