@@ -1,0 +1,13 @@
+
+
+<% if flash[:notice] %>
+<div class="show flash"><%= notice %></div>
+<% end %>
+
+<p class="show"><string class="show-title">Title:</string><%= @list.title %></p>
+<p class="show"><string class="show-title">Body:</string><%= @list.body %></p>
+
+<%= link_to "Edit",edit_list_path(@list.id),class:"btn" %>
+|
+<a class=btn  href="/books">Back</a>
+
